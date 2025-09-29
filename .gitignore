@@ -1,0 +1,13 @@
+﻿# python/node/terraform 공통
+.venv/
+__pycache__/
+*.pyc
+.env*
+node_modules/
+.dist/
+dist/
+build/
+.terraform/
+*.tfstate*
+coverage/
+.DS_Store
