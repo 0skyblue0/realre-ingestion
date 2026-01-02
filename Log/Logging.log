@@ -1,0 +1,2 @@
+[2026-01-02 18:32:36] [INFO|ingestion.manager|create_logger:73] Logger Create
+[2026-01-02 18:32:36] [INFO|ingestion.manager|load_schedule:38] Loaded schedule from schedules/interval_schedule.json

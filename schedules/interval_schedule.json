@@ -1,0 +1,18 @@
+{
+  "schema": "1.0",
+  "jobs": [
+    {
+      "name": "fetch_transactions",
+      "schedule": {
+        "type": "interval",
+        "seconds": 10
+      },
+      "args": {
+        "source": "mock",
+        "client_method": "fetch_transactions",
+        "limit": 3,
+        "scd_table": "transactions_scd"
+      }
+    }
+  ]
+}

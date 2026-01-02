@@ -1,0 +1,18 @@
+{
+  "schema": "1.0",
+  "jobs": [
+    {
+      "name": "fetch_transactions",
+      "schedule": {
+        "type": "weekly",
+        "weekday": "tuesday",
+        "time": "02:00"
+      },
+      "args": {
+        "source": "mock",
+        "limit": 5,
+        "scd_table": "transactions_scd"
+      }
+    }
+  ]
+}
