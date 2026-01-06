@@ -1,0 +1,4297 @@
+{
+    "getBuildingAge": {
+        "국문": "건축물연령속성조회",
+        "URL": "https://api.vworld.kr/ned/data/getBuildingAge",
+        "요청 변수": {
+            "pnu": {
+                "Required": "필수",
+                "Description": "고유번호(8자리 이상)"
+            },
+            "buldAge": {
+                "Required": "옵션",
+                "Description": "건물연령"
+            },
+            "buldAgeSe": {
+                "Required": "옵션",
+                "Description": "건물연령구분(1:이상, 2:이하, 3:초과, 4:미만), 생략할 경우 =로 검색됨"
+            },
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지 번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "gisIdntfCno": {
+                "Description": "GIS건물통합식별번호"
+            },
+            "pnu": {
+                "Description": "고유번호"
+            },
+            "ldCode": {
+                "Description": "법정동코드"
+            },
+            "ldCodeNm": {
+                "Description": "법정동명"
+            },
+            "regstrSeCode": {
+                "Description": "특수지구분코드"
+            },
+            "regstrSeCodeNm": {
+                "Description": "특수지구분명"
+            },
+            "mnnmSlno": {
+                "Description": "지번"
+            },
+            "buldIdntfcNo": {
+                "Description": "건물식별번호"
+            },
+            "agbldgSeCode": {
+                "Description": "집합건물구분코드"
+            },
+            "agbldgSeCodeNm": {
+                "Description": "집합건물구분"
+            },
+            "buldKndCode": {
+                "Description": "대장종류코드"
+            },
+            "buldKndCodeNm": {
+                "Description": "대장종류"
+            },
+            "buldNm": {
+                "Description": "건물명"
+            },
+            "buldDongNm": {
+                "Description": "건물동명"
+            },
+            "buldTotar": {
+                "Description": "건물연면적(㎡)"
+            },
+            "strctCode": {
+                "Description": "건축물구조코드"
+            },
+            "strctCodeNm": {
+                "Description": "건축물구조명"
+            },
+            "mainPrposCode": {
+                "Description": "주요용도코드"
+            },
+            "mainPrposCodeNm": {
+                "Description": "주요용도명"
+            },
+            "buldHg": {
+                "Description": "건물높이(m)"
+            },
+            "groundFloorCo": {
+                "Description": "지상층수"
+            },
+            "undgrndFloorCo": {
+                "Description": "지하층수"
+            },
+            "prmisnDe": {
+                "Description": "허가일자"
+            },
+            "useConfmDe": {
+                "Description": "사용승인일자"
+            },
+            "buldAge": {
+                "Description": "건물연령"
+            },
+            "agrdeSeCode": {
+                "Description": "연령대구분코드"
+            },
+            "agrdeSeCodeNm": {
+                "Description": "연령대구분명"
+            },
+            "agrde5ClassSeCode": {
+                "Description": "연령대5계급코드"
+            },
+            "agrde5ClassSeCodeNm": {
+                "Description": "연령대5계급명"
+            },
+            "lastUpdtDt": {
+                "Description": "데이터기준일자"
+            }
+        },
+        "처리 방식": "field"
+    },
+    "getBuildingUse": {
+        "국문": "용도별건물속성조회",
+        "URL": "https://api.vworld.kr/ned/data/getBuildingUse",
+        "요청 변수": {
+            "pnu": {
+                "Required": "필수",
+                "Description": "고유번호(8자리 이상)"
+            },
+            "mainPrposCode": {
+                "Required": "옵션",
+                "Description": "주요용도코드"
+            },
+            "detailPrposCode": {
+                "Required": "옵션",
+                "Description": "세부용도코드"
+            },
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지 번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "gisIdntfcNo": {
+                "Description": "GIS건물통합식별번호"
+            },
+            "pnu": {
+                "Description": "고유번호"
+            },
+            "ldCode": {
+                "Description": "법정동코드"
+            },
+            "ldCodeNm": {
+                "Description": "법정동명"
+            },
+            "regstrSeCode": {
+                "Description": "특수지구분코드"
+            },
+            "regstrSeCodeNm": {
+                "Description": "특수지구분명"
+            },
+            "mnnmSlno": {
+                "Description": "지번"
+            },
+            "buldIdntfcNo": {
+                "Description": "건물식별번호"
+            },
+            "agbldgSeCode": {
+                "Description": "집합건물구분코드"
+            },
+            "agbldgSeCodeNm": {
+                "Description": "집합건물구분"
+            },
+            "buldKndCode": {
+                "Description": "대장종류코드"
+            },
+            "buldKndCodeNm": {
+                "Description": "대장종류"
+            },
+            "buldNm": {
+                "Description": "건물명"
+            },
+            "buldDongNm": {
+                "Description": "건물동명"
+            },
+            "buldMainAtachSeCode": {
+                "Description": "건물주부구분코드"
+            },
+            "buldMainAtachSeCodeNm": {
+                "Description": "건물주부구분명"
+            },
+            "buldPlotAr": {
+                "Description": "건물대지면적(㎡)"
+            },
+            "buldBildngAr": {
+                "Description": "건물건축면적(㎡)"
+            },
+            "buldTotar": {
+                "Description": "건물연면적(㎡)"
+            },
+            "measrmtRt": {
+                "Description": "용적율(%)"
+            },
+            "btlRt": {
+                "Description": "건폐율(%)"
+            },
+            "strctCode": {
+                "Description": "건축물구조코드"
+            },
+            "strctCodeNm": {
+                "Description": "건축물구조명"
+            },
+            "mainPrposCode": {
+                "Description": "주요용도코드"
+            },
+            "mainPrposCodeNm": {
+                "Description": "주요용도명"
+            },
+            "detailPrposCode": {
+                "Description": "세부용도코드"
+            },
+            "detailPrposCodeNm": {
+                "Description": "세부용도명"
+            },
+            "buldPrposClCode": {
+                "Description": "건물용도분류코드"
+            },
+            "buldPrposClCodeNm": {
+                "Description": "건물용도분류명"
+            },
+            "buldHg": {
+                "Description": "건물높이(m)"
+            },
+            "groundFloorCo": {
+                "Description": "지상층수"
+            },
+            "undgrndFloorCo": {
+                "Description": "지하층수"
+            },
+            "prmisnDe": {
+                "Description": "허가일자"
+            },
+            "useConfmDe": {
+                "Description": "사용승인일자"
+            },
+            "lastUpdtDt": {
+                "Description": "데이터기준일자"
+            }
+        },
+        "처리 방식": "field"
+    },
+    "getByRegion": {
+        "국문": "지역별지가변동률속성조회",
+        "URL": "https://api.vworld.kr/ned/data/getByRegion",
+        "요청 변수": {
+            "stdrYear": {
+                "Required": "옵션",
+                "Description": "기준연도(YYYY: 4자리)"
+            },
+            "stdrMt": {
+                "Required": "옵션",
+                "Description": "기준월(MM: 2자리)"
+            },
+            "reqLdCode": {
+                "Required": "옵션",
+                "Description": "법정동코드[2-10자리](시도[2]+시군구[3]+읍면동[3]+리[2])"
+            },
+            "scopeDiv": {
+                "Required": "옵션",
+                "Description": "요청범위구분(A: 시군구단위, B: 읍면동리단위)"
+            },
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지 번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "stdrYear": {
+                "Description": "기준연도"
+            },
+            "stdrMt": {
+                "Description": "기준월"
+            },
+            "ldCtprvnCode": {
+                "Description": "시도코드"
+            },
+            "ldCtprvnNm": {
+                "Description": "시도명"
+            },
+            "ldCpsgCode": {
+                "Description": "시군구코드"
+            },
+            "ldCpsgCodeNm": {
+                "Description": "시군구명"
+            },
+            "ldEmdLiCode": {
+                "Description": "읍면동리코드"
+            },
+            "ldEmdLiCodeNm": {
+                "Description": "읍면동리명"
+            },
+            "pclndIndex": {
+                "Description": "지가지수"
+            },
+            "pclndChgRt": {
+                "Description": "지가변동률(%)"
+            },
+            "acmtlPclndChgRt": {
+                "Description": "누계지가변동률(%)"
+            },
+            "lastUpdtDt": {
+                "Description": "데이터기준일자"
+            }
+        },
+        "처리 방식": "field"
+    },
+    "getLargeCLByRegion": {
+        "국문": "권역별 지가변동률속성조회",
+        "URL": "https://api.vworld.kr/ned/data/getLargeCLByRegion",
+        "요청 변수": {
+            "stdrYear": {
+                "Required": "옵션",
+                "Description": "기준연도(YYYY: 4자리)"
+            },
+            "stdrMt": {
+                "Required": "옵션",
+                "Description": "기준월(MM: 2자리)"
+            },
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지 번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "stdrYear": {
+                "Description": "기준연도"
+            },
+            "stdrMt": {
+                "Description": "기준월"
+            },
+            "ldCtprvnCode": {
+                "Description": "시도코드"
+            },
+            "ldCtprvnNm": {
+                "Description": "시도명"
+            },
+            "pclndIndex": {
+                "Description": "지가지수"
+            },
+            "pclndChgRt": {
+                "Description": "지가변동률(%)"
+            },
+            "acmtlPclndChgRt": {
+                "Description": "누계지가변동률(%)"
+            },
+            "lastUpdtDt": {
+                "Description": "데이터기준일자"
+            }
+        },
+        "처리 방식": "field"
+    },
+    "getByZoning": {
+        "국문": "용도지역별지가변동률속성조회",
+        "URL": "https://api.vworld.kr/ned/data/getByZoning",
+        "요청 변수": {
+            "stdrYear": {
+                "Required": "옵션",
+                "Description": "기준연도(YYYY: 4자리)"
+            },
+            "stdrMt": {
+                "Required": "옵션",
+                "Description": "기준월(MM: 2자리)"
+            },
+            "reqLdCode": {
+                "Required": "옵션",
+                "Description": "법정동코드[2-10자리](시도[2]+시군구[3]+읍면동[3]+리[2])"
+            },
+            "scopeDiv": {
+                "Required": "옵션",
+                "Description": "요청범위구분(A: 시군구단위, B: 읍면동리단위)"
+            },
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지 번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "stdrYear": {
+                "Description": "기준연도"
+            },
+            "stdrMt": {
+                "Description": "기준월"
+            },
+            "ldCtprvnCode": {
+                "Description": "시도코드"
+            },
+            "ldCtprvnNm": {
+                "Description": "시도명"
+            },
+            "ldCpsgCode": {
+                "Description": "시군구코드"
+            },
+            "ldCpsgCodeNm": {
+                "Description": "시군구명"
+            },
+            "ldEmdLiCode": {
+                "Description": "읍면동리코드"
+            },
+            "ldEmdLiCodeNm": {
+                "Description": "읍면동리명"
+            },
+            "residePclndIndex": {
+                "Description": "주거지역지가지수"
+            },
+            "residePclndChgRt": {
+                "Description": "주거지역지가변동률(%)"
+            },
+            "residePclndAcmtl": {
+                "Description": "주거지역누계지가변동률(%)"
+            },
+            "cmrcPclndIndex": {
+                "Description": "상업지역지가지수"
+            },
+            "cmrcPclndChgRt": {
+                "Description": "상업지역지가변동률(%)"
+            },
+            "cmrcPclndAcmtl": {
+                "Description": "상업지역누계지가변동률(%)"
+            },
+            "indstryPclndIndex": {
+                "Description": "공업지역지가지수"
+            },
+            "indstryPclndChgRt": {
+                "Description": "공업지역지가변동률(%)"
+            },
+            "indstryPclndAcmtl": {
+                "Description": "공업지역누계지가변동률(%)"
+            },
+            "greensPclndIndex": {
+                "Description": "녹지지역지가지수"
+            },
+            "greensPclndChgRt": {
+                "Description": "녹지지역지가변동률(%)"
+            },
+            "greensPclndAcmtl": {
+                "Description": "녹지지역누계지가변동률(%)"
+            },
+            "manageAreaPclndIndex": {
+                "Description": "관리지역지가지수"
+            },
+            "manageAreaPclndChgRt": {
+                "Description": "관리지역지가변동률(%)"
+            },
+            "manageAreaPclndAcmtl": {
+                "Description": "관리지역누계지가변동률(%)"
+            },
+            "presvManagePclndIndex": {
+                "Description": "보전관리지역지가지수"
+            },
+            "presvManagePclndChgRt": {
+                "Description": "보전관리지역지가변동률(%)"
+            },
+            "presvManagePclndAcmtl": {
+                "Description": "보전관리지역누계지가변동률(%)"
+            },
+            "prdctnManagePclndIndex": {
+                "Description": "생산관리지역지가지수"
+            },
+            "prdctnManagePclndChgRt": {
+                "Description": "생산관리지역지가변동률(%)"
+            },
+            "prdctnManagePclndAcmtl": {
+                "Description": "생산관리지역누계지가변동률(%)"
+            },
+            "planManagePclndIndex": {
+                "Description": "계획관리지역지가지수"
+            },
+            "planManagePclndChgRt": {
+                "Description": "계획관리지역지가변동률(%)"
+            },
+            "planManagePclndAcmtl": {
+                "Description": "계획관리지역누계지가변동률(%)"
+            },
+            "aglfrsPclndIndex": {
+                "Description": "농림지역지가지수"
+            },
+            "aglfrsPclndChgRt": {
+                "Description": "농림지역지가변동률(%)"
+            },
+            "aglfrsPclndAcmtl": {
+                "Description": "농림지역누계지가변동률(%)"
+            },
+            "nrvfPclndIndex": {
+                "Description": "자연환경보전지역지가지수"
+            },
+            "nrvfPclndChgRt": {
+                "Description": "자연환경보전지역지가변동률(%)"
+            },
+            "nrvfPclndAcmtl": {
+                "Description": "자연환경보전지역누계지가변동률(%)"
+            },
+            "ascityPclndIndex": {
+                "Description": "준도시지역지가지수"
+            },
+            "ascityPclndChgRt": {
+                "Description": "준도시지역지가변동률(%)"
+            },
+            "ascityPclndAcmtl": {
+                "Description": "준도시지역누계지가변동률(%)"
+            },
+            "asaglfrsPclndIndex": {
+                "Description": "준농림지역지가지수"
+            },
+            "asaglfrsPclndChgRt": {
+                "Description": "준농림지역지가변동률(%)"
+            },
+            "asaglfrsPclndAcmtl": {
+                "Description": "준농림지역누계지가변동률(%)"
+            },
+            "lastUpdtDt": {
+                "Description": "데이터기준일자"
+            }
+        },
+        "처리 방식": "field"
+    },
+    "getLargeCLByZoning": {
+        "국문": "권역별 용도지역별지가변동률속성조회",
+        "URL": "https://api.vworld.kr/ned/data/getLargeCLByZoning",
+        "요청 변수": {
+            "stdrYear": {
+                "Required": "옵션",
+                "Description": "기준연도(YYYY: 4자리)"
+            },
+            "stdrMt": {
+                "Required": "옵션",
+                "Description": "기준월(MM: 2자리)"
+            },
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지 번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "stdrYear": {
+                "Description": "기준연도"
+            },
+            "stdrMt": {
+                "Description": "기준월"
+            },
+            "ldCtprvnCode": {
+                "Description": "시도코드"
+            },
+            "ldCtprvnNm": {
+                "Description": "시도명"
+            },
+            "residePclndIndex": {
+                "Description": "주거지역지가지수"
+            },
+            "residePclndChgRt": {
+                "Description": "주거지역지가변동률(%)"
+            },
+            "residePclndAcmtl": {
+                "Description": "주거지역누계지가변동률(%)"
+            },
+            "cmrcPclndIndex": {
+                "Description": "상업지역지가지수"
+            },
+            "cmrcPclndChgRt": {
+                "Description": "상업지역지가변동률(%)"
+            },
+            "cmrcPclndAcmtl": {
+                "Description": "상업지역누계지가변동률(%)"
+            },
+            "indstryPclndIndex": {
+                "Description": "공업지역지가지수"
+            },
+            "indstryPclndChgRt": {
+                "Description": "공업지역지가변동률(%)"
+            },
+            "indstryPclndAcmtl": {
+                "Description": "공업지역누계지가변동률(%)"
+            },
+            "greensPclndIndex": {
+                "Description": "녹지지역지가지수"
+            },
+            "greensPclndChgRt": {
+                "Description": "녹지지역지가변동률(%)"
+            },
+            "greensPclndAcmtl": {
+                "Description": "녹지지역누계지가변동률(%)"
+            },
+            "manageAreaPclndIndex": {
+                "Description": "관리지역지가지수"
+            },
+            "manageAreaPclndChgRt": {
+                "Description": "관리지역지가변동률(%)"
+            },
+            "manageAreaPclndAcmtl": {
+                "Description": "관리지역누계지가변동률(%)"
+            },
+            "presvManagePclndIndex": {
+                "Description": "보전관리지역지가지수"
+            },
+            "presvManagePclndChgRt": {
+                "Description": "보전관리지역지가변동률(%)"
+            },
+            "presvManagePclndAcmtl": {
+                "Description": "보전관리지역누계지가변동률(%)"
+            },
+            "prdctnManagePclndIndex": {
+                "Description": "생산관리지역지가지수"
+            },
+            "prdctnManagePclndChgRt": {
+                "Description": "생산관리지역지가변동률(%)"
+            },
+            "prdctnManagePclndAcmtl": {
+                "Description": "생산관리지역누계지가변동률(%)"
+            },
+            "planManagePclndIndex": {
+                "Description": "계획관리지역지가지수"
+            },
+            "planManagePclndChgRt": {
+                "Description": "계획관리지역지가변동률(%)"
+            },
+            "planManagePclndAcmtl": {
+                "Description": "계획관리지역누계지가변동률(%)"
+            },
+            "aglfrsPclndIndex": {
+                "Description": "농림지역지가지수"
+            },
+            "aglfrsPclndChgRt": {
+                "Description": "농림지역지가변동률(%)"
+            },
+            "aglfrsPclndAcmtl": {
+                "Description": "농림지역누계지가변동률(%)"
+            },
+            "nrvfPclndIndex": {
+                "Description": "자연환경보전지역지가지수"
+            },
+            "nrvfPclndChgRt": {
+                "Description": "자연환경보전지역지가변동률(%)"
+            },
+            "nrvfPclndAcmtl": {
+                "Description": "자연환경보전지역누계지가변동률(%)"
+            },
+            "ascityPclndIndex": {
+                "Description": "준도시지역지가지수"
+            },
+            "ascityPclndChgRt": {
+                "Description": "준도시지역지가변동률(%)"
+            },
+            "ascityPclndAcmtl": {
+                "Description": "준도시지역누계지가변동률(%)"
+            },
+            "asaglfrsPclndIndex": {
+                "Description": "준농림지역지가지수"
+            },
+            "asaglfrsPclndChgRt": {
+                "Description": "준농림지역지가변동률(%)"
+            },
+            "asaglfrsPclndAcmtl": {
+                "Description": "준농림지역누계지가변동률(%)"
+            },
+            "lastUpdtDt": {
+                "Description": "데이터기준일자"
+            }
+        },
+        "처리 방식": "field"
+    },
+    "getByLandCategory": {
+        "국문": "이용상황별지가변동률속성조회",
+        "URL": "https://api.vworld.kr/ned/data/getByLandCategory",
+        "요청 변수": {
+            "stdrYear": {
+                "Required": "옵션",
+                "Description": "기준연도(YYYY: 4자리)"
+            },
+            "stdrMt": {
+                "Required": "옵션",
+                "Description": "기준월(MM: 2자리)"
+            },
+            "reqLdCode": {
+                "Required": "옵션",
+                "Description": "법정동코드[2-10자리](시도[2]+시군구[3]+읍면동[3]+리[2])"
+            },
+            "scopeDiv": {
+                "Required": "옵션",
+                "Description": "요청범위구분(A: 시군구단위, B: 읍면동리단위)"
+            },
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지 번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "stdrYear": {
+                "Description": "기준연도"
+            },
+            "stdrMt": {
+                "Description": "기준월"
+            },
+            "ldCtprvnCode": {
+                "Description": "시도코드"
+            },
+            "ldCtprvnNm": {
+                "Description": "시도명"
+            },
+            "ldCpsgCode": {
+                "Description": "시군구코드"
+            },
+            "ldCpsgCodeNm": {
+                "Description": "시군구명"
+            },
+            "ldEmdLiCode": {
+                "Description": "읍면동리코드"
+            },
+            "ldEmdLiCodeNm": {
+                "Description": "읍면동리명"
+            },
+            "plotResidePclndIndex": {
+                "Description": "주거용대지가지수"
+            },
+            "plotResidePclndChgRt": {
+                "Description": "주거용대지가변동률(%)"
+            },
+            "plotResidePclndAcmtl": {
+                "Description": "주거용대누계지가변동률(%)"
+            },
+            "plotCmrcPclndIndex": {
+                "Description": "상업용대지가지수"
+            },
+            "plotCmrcPclndChgRt": {
+                "Description": "상업용대지가변동률(%)"
+            },
+            "plotCmrcPclndAcmtl": {
+                "Description": "상업용대누계지가변동률(%)"
+            },
+            "fctryPclndIndex": {
+                "Description": "공장용지지가지수"
+            },
+            "fctryPclndChgRt": {
+                "Description": "공장용지지가변동률(%)"
+            },
+            "fctryPclndAcmtl": {
+                "Description": "공장용지누계지가변동률(%)"
+            },
+            "fildPclndIndex": {
+                "Description": "전지가지수"
+            },
+            "fildPclndChgRt": {
+                "Description": "전지가변동률(%)"
+            },
+            "fildPclndAcmtl": {
+                "Description": "전누계지가변동률(%)"
+            },
+            "ricfldPclndIndex": {
+                "Description": "답지가지수"
+            },
+            "ricfldPclndChgRt": {
+                "Description": "답지가변동률(%)"
+            },
+            "ricfldPclndAcmtl": {
+                "Description": "답누계지가변동률(%)"
+            },
+            "frtlPclndIndex": {
+                "Description": "임야지가지수"
+            },
+            "frtlPclndChgRt": {
+                "Description": "임야지가변동률(%)"
+            },
+            "frtlPclndAcmtl": {
+                "Description": "임야누계지가변동률(%)"
+            },
+            "etcPclndIndex": {
+                "Description": "기타지가지수"
+            },
+            "etcPclndChgRt": {
+                "Description": "기타지가변동률(%)"
+            },
+            "etcPclndAcmtl": {
+                "Description": "기타누계지가변동률(%)"
+            },
+            "lastUpdtDt": {
+                "Description": "데이터기준일자"
+            }
+        },
+        "처리 방식": "field"
+    },
+    "getLargeCLByLandCategory": {
+        "국문": "권역별 이용상황별지가변동률속성조회",
+        "URL": "https://api.vworld.kr/ned/data/getLargeCLByLandCategory",
+        "요청 변수": {
+            "stdrYear": {
+                "Required": "옵션",
+                "Description": "기준연도(YYYY: 4자리)"
+            },
+            "stdrMt": {
+                "Required": "옵션",
+                "Description": "기준월(MM: 2자리)"
+            },
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지 번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "stdrYear": {
+                "Description": "기준연도"
+            },
+            "stdrMt": {
+                "Description": "기준월"
+            },
+            "ldCtprvnCode": {
+                "Description": "시도코드"
+            },
+            "ldCtprvnNm": {
+                "Description": "시도명"
+            },
+            "plotResidePclndIndex": {
+                "Description": "주거용대지가지수"
+            },
+            "plotResidePclndChgRt": {
+                "Description": "주거용대지가변동률(%)"
+            },
+            "plotResidePclndAcmtl": {
+                "Description": "주거용대누계지가변동률(%)"
+            },
+            "plotCmrcPclndIndex": {
+                "Description": "상업용대지가지수"
+            },
+            "plotCmrcPclndChgRt": {
+                "Description": "상업용대지가변동률(%)"
+            },
+            "plotCmrcPclndAcmtl": {
+                "Description": "상업용대누계지가변동률(%)"
+            },
+            "fctryPclndIndex": {
+                "Description": "공장용지지가지수"
+            },
+            "fctryPclndChgRt": {
+                "Description": "공장용지지가변동률(%)"
+            },
+            "fctryPclndAcmtl": {
+                "Description": "공장용지누계지가변동률(%)"
+            },
+            "fildPclndIndex": {
+                "Description": "전지가지수"
+            },
+            "fildPclndChgRt": {
+                "Description": "전지가변동률(%)"
+            },
+            "fildPclndAcmtl": {
+                "Description": "전누계지가변동률(%)"
+            },
+            "ricfldPclndIndex": {
+                "Description": "답지가지수"
+            },
+            "ricfldPclndChgRt": {
+                "Description": "답지가변동률(%)"
+            },
+            "ricfldPclndAcmtl": {
+                "Description": "답누계지가변동률(%)"
+            },
+            "frtlPclndIndex": {
+                "Description": "임야지가지수"
+            },
+            "frtlPclndChgRt": {
+                "Description": "임야지가변동률(%)"
+            },
+            "frtlPclndAcmtl": {
+                "Description": "임야누계지가변동률(%)"
+            },
+            "etcPclndIndex": {
+                "Description": "기타지가지수"
+            },
+            "etcPclndChgRt": {
+                "Description": "기타지가변동률(%)"
+            },
+            "etcPclndAcmtl": {
+                "Description": "기타누계지가변동률(%)"
+            },
+            "lastUpdtDt": {
+                "Description": "데이터기준일자"
+            }
+        },
+        "처리 방식": "field"
+    },
+    "getLandCharacteristics": {
+        "국문": "토지특성속성조회",
+        "URL": "https://api.vworld.kr/ned/data/getLandCharacteristics",
+        "요청 변수": {
+            "pnu": {
+                "Required": "필수",
+                "Description": "고유번호(8자리 이상)"
+            },
+            "stdrYear": {
+                "Required": "옵션",
+                "Description": "기준연도(YYYY: 4자리)"
+            },
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지 번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "pnu": {
+                "Description": "고유번호"
+            },
+            "ldCode": {
+                "Description": "법정동코드"
+            },
+            "ldCodeNm": {
+                "Description": "법정동명"
+            },
+            "regstrSeCode": {
+                "Description": "대장구분코드"
+            },
+            "regstrSeCodeNm": {
+                "Description": "대장구분명"
+            },
+            "mnnmSlno": {
+                "Description": "지번"
+            },
+            "ladSn": {
+                "Description": "토지일련번호"
+            },
+            "stdrYear": {
+                "Description": "기준연도"
+            },
+            "stdrMt": {
+                "Description": "기준월"
+            },
+            "lndcgrCode": {
+                "Description": "지목코드"
+            },
+            "lndcgrCodeNm": {
+                "Description": "지목명"
+            },
+            "lndpclAr": {
+                "Description": "토지면적(㎡)"
+            },
+            "prposArea1": {
+                "Description": "용도지역코드1"
+            },
+            "prposArea1Nm": {
+                "Description": "용도지역명1"
+            },
+            "prposArea2": {
+                "Description": "용도지역코드2"
+            },
+            "prposArea2Nm": {
+                "Description": "용도지역명2"
+            },
+            "ladUseSittn": {
+                "Description": "토지이용상황코드"
+            },
+            "ladUseSittnNm": {
+                "Description": "토지이동상황"
+            },
+            "tpgrphHgCode": {
+                "Description": "지형높이코드"
+            },
+            "tpgrphHgCodeNm": {
+                "Description": "지형높이(m)"
+            },
+            "tpgrphFrmCode": {
+                "Description": "지형형상코드"
+            },
+            "tpgrphFrmCodeNm": {
+                "Description": "지형형상"
+            },
+            "roadSideCode": {
+                "Description": "도로접면코드"
+            },
+            "roadSideCodeNm": {
+                "Description": "도로접면"
+            },
+            "pblntfPclnd": {
+                "Description": "공시지가(원/㎡)"
+            },
+            "lastUpdtDt": {
+                "Description": "데이터기준일자"
+            }
+        },
+        "처리 방식": "field"
+    },
+    "getIndvdLandPriceAttr": {
+        "국문": "개별공시지가속성조회",
+        "URL": "https://api.vworld.kr/ned/data/getIndvdLandPriceAttr",
+        "요청 변수": {
+            "pnu": {
+                "Required": "필수",
+                "Description": "고유번호(8자리 이상)"
+            },
+            "stdrYear": {
+                "Required": "옵션",
+                "Description": "기준연도(YYYY: 4자리)"
+            },
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지 번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "pnu": {
+                "Description": "고유번호"
+            },
+            "ldCode": {
+                "Description": "법정동코드"
+            },
+            "ldCodeNm": {
+                "Description": "법정동명"
+            },
+            "regstrSeCode": {
+                "Description": "특수지구분코드"
+            },
+            "regstrSeCodeNm": {
+                "Description": "특수지구분명"
+            },
+            "mnnmSlno": {
+                "Description": "지번"
+            },
+            "stdrYear": {
+                "Description": "기준연도"
+            },
+            "stdrMt": {
+                "Description": "기준월"
+            },
+            "pblntfPclnd": {
+                "Description": "공시지가(원/㎡)"
+            },
+            "pblntfDe": {
+                "Description": "공시일자"
+            },
+            "stdLandAt": {
+                "Description": "표준지여부"
+            },
+            "lastUpdtDt": {
+                "Description": "데이터기준일자"
+            }
+        },
+        "처리 방식": "field"
+    },
+    "getIndvdHousingPriceAttr": {
+        "국문": "개별주택가격속성조회",
+        "URL": "https://api.vworld.kr/ned/data/getIndvdHousingPriceAttr",
+        "요청 변수": {
+            "pnu": {
+                "Required": "필수",
+                "Description": "고유번호(8자리 이상)"
+            },
+            "stdrYear": {
+                "Required": "옵션",
+                "Description": "기준연도(YYYY: 4자리)"
+            },
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지 번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "pnu": {
+                "Description": "고유번호"
+            },
+            "ldCode": {
+                "Description": "법정동코드"
+            },
+            "ldCodeNm": {
+                "Description": "법정동명"
+            },
+            "regstrSeCode": {
+                "Description": "특수지구분코드"
+            },
+            "regstrSeCodeNm": {
+                "Description": "특수지구분명"
+            },
+            "mnnmSlno": {
+                "Description": "지번"
+            },
+            "bildRegstrEsntlNo": {
+                "Description": "건축물대장고유번호"
+            },
+            "stdrYear": {
+                "Description": "기준연도"
+            },
+            "stdrMt": {
+                "Description": "기준월"
+            },
+            "dongCode": {
+                "Description": "동코드"
+            },
+            "ladRegstrAr": {
+                "Description": "토지대장면적(㎡)"
+            },
+            "calcPlotAr": {
+                "Description": "산정대지면적(㎡)"
+            },
+            "buldAllTotAr": {
+                "Description": "건물전체연면적(㎡)"
+            },
+            "buldCalcTotAr": {
+                "Description": "건물산정연면적(㎡)"
+            },
+            "housePc": {
+                "Description": "주택가격(원)"
+            },
+            "stdLandAt": {
+                "Description": "표준지여부"
+            },
+            "lastUpdtDt": {
+                "Description": "데이터기준일자"
+            }
+        },
+        "처리 방식": "field"
+    },
+    "getApartHousingPriceAttr": {
+        "국문": "공동주택가격속성조회",
+        "URL": "https://api.vworld.kr/ned/data/getApartHousingPriceAttr",
+        "요청 변수": {
+            "pnu": {
+                "Required": "필수",
+                "Description": "고유번호(8자리 이상)"
+            },
+            "stdrYear": {
+                "Required": "옵션",
+                "Description": "기준연도(YYYY: 4자리)"
+            },
+            "dongNm": {
+                "Required": "옵션",
+                "Description": "동명"
+            },
+            "hoNm": {
+                "Required": "옵션",
+                "Description": "호명"
+            },
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지 번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "pnu": {
+                "Description": "고유번호"
+            },
+            "ldCode": {
+                "Description": "법정동코드"
+            },
+            "ldCodeNm": {
+                "Description": "법정동명"
+            },
+            "regstrSeCode": {
+                "Description": "특수지구분코드"
+            },
+            "regstrSeCodeNm": {
+                "Description": "특수지구분명"
+            },
+            "mnnmSlno": {
+                "Description": "지번"
+            },
+            "stdrYear": {
+                "Description": "기준연도"
+            },
+            "stdrMt": {
+                "Description": "기준월"
+            },
+            "aphusCode": {
+                "Description": "공동주택코드"
+            },
+            "aphusSeCode": {
+                "Description": "공동주택구분코드"
+            },
+            "aphusSeCodeNm": {
+                "Description": "공동주택구분명"
+            },
+            "spclLandNm": {
+                "Description": "특수지명"
+            },
+            "aphusNm": {
+                "Description": "공동주택명"
+            },
+            "dongNm": {
+                "Description": "동명"
+            },
+            "floorNm": {
+                "Description": "층명"
+            },
+            "hoNm": {
+                "Description": "호명"
+            },
+            "prvuseAr": {
+                "Description": "전용면적(㎡)"
+            },
+            "pblntfPc": {
+                "Description": "공시가격(원)"
+            },
+            "lastUpdtDt": {
+                "Description": "데이터기준일자"
+            }
+        },
+        "처리 방식": "field"
+    },
+    "getIslandsAttr": {
+        "국문": "도서정보속성조회",
+        "URL": "https://api.vworld.kr/ned/data/getIslandsAttr",
+        "요청 변수": {
+            "ldCode": {
+                "Required": "옵션",
+                "Description": "법정동코드(2~5자리)"
+            },
+            "islndsNm": {
+                "Required": "옵션",
+                "Description": "도서명"
+            },
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지 번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "ldCode": {
+                "Description": "법정동코드"
+            },
+            "ldCodeNm": {
+                "Description": "법정동명"
+            },
+            "islndsEsntlno": {
+                "Description": "도서고유번호"
+            },
+            "islndsNm": {
+                "Description": "도서명"
+            },
+            "islndsSeCode": {
+                "Description": "도서구분코드"
+            },
+            "islndsSeCodeNm": {
+                "Description": "도서구분명"
+            },
+            "cnncTyCode": {
+                "Description": "연결유형코드"
+            },
+            "cnncTyCodeNm": {
+                "Description": "연결유형"
+            },
+            "dikeBridgeCo": {
+                "Description": "제방다리수"
+            },
+            "dikeBridgeNm": {
+                "Description": "제방다리명"
+            },
+            "lastUpdtDt": {
+                "Description": "데이터기준일자"
+            }
+        },
+        "처리 방식": "field"
+    },
+    "getEDBasicInfo": {
+        "국문": "부동산개발업기본정보조회",
+        "URL": "https://api.vworld.kr/ned/data/getEDBasicInfo",
+        "요청 변수": {
+            "ldCode": {
+                "Required": "옵션",
+                "Description": "시도코드(2자리)"
+            },
+            "estatedvlprCmpnm": {
+                "Required": "옵션",
+                "Description": "부동산개발업상호"
+            },
+            "rprsntv": {
+                "Required": "옵션",
+                "Description": "대표자"
+            },
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "estatedvlprRegistNo": {
+                "Description": "부동산개발업등록번호"
+            },
+            "estatedvlprCmpnm": {
+                "Description": "부동산개발업상호"
+            },
+            "rprsntv": {
+                "Description": "대표자"
+            },
+            "cprSeCode": {
+                "Description": "법인구분코드"
+            },
+            "cprSeCodeNm": {
+                "Description": "법인구분명"
+            },
+            "telno": {
+                "Description": "전화번호"
+            },
+            "nltySeCode": {
+                "Description": "국적구분코드"
+            },
+            "nltySeCodeNm": {
+                "Description": "국적구분명"
+            },
+            "capl": {
+                "Description": "자본금(천원)"
+            },
+            "invstmntAmount": {
+                "Description": "출자금액(천원)"
+            },
+            "invstmntRate": {
+                "Description": "출자비율(%)"
+            },
+            "registDe": {
+                "Description": "등록일자"
+            },
+            "registSttusCode": {
+                "Description": "등록상태코드"
+            },
+            "registSttusCodeNm": {
+                "Description": "등록상태"
+            },
+            "prcsSttusCode": {
+                "Description": "처리상태코드"
+            },
+            "prcsSttusCodeNm": {
+                "Description": "처리상태"
+            },
+            "spcltyhnfCo": {
+                "Description": "전문인력수"
+            },
+            "lastUpdtDt": {
+                "Description": "데이터기준일자"
+            }
+        },
+        "처리 방식": "field"
+    },
+    "getEDOfficeInfo": {
+        "국문": "부동산개발업사무소정보조회",
+        "URL": "https://api.vworld.kr/ned/data/getEDOfficeInfo",
+        "요청 변수": {
+            "ldCode": {
+                "Required": "옵션",
+                "Description": "시도코드(2자리)"
+            },
+            "estatedvlprCmpnm": {
+                "Required": "옵션",
+                "Description": "부동산개발업상호"
+            },
+            "rprsntv": {
+                "Required": "옵션",
+                "Description": "대표자"
+            },
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "estatedvlprRegistNo": {
+                "Description": "부동산개발업등록번호"
+            },
+            "estatedvlprCmpnm": {
+                "Description": "부동산개발업상호"
+            },
+            "rprsntv": {
+                "Description": "대표자"
+            },
+            "pnu": {
+                "Description": "고유번호"
+            },
+            "ldCode": {
+                "Description": "법정동코드"
+            },
+            "ldCodeNm": {
+                "Description": "법정동명"
+            },
+            "regstrSeCode": {
+                "Description": "대장구분코드"
+            },
+            "regstrSeCodeNm": {
+                "Description": "대장구분명"
+            },
+            "mnnmSlno": {
+                "Description": "지번"
+            },
+            "etcAdres": {
+                "Description": "기타주소"
+            },
+            "rdnmadrCode": {
+                "Description": "도로명주소코드"
+            },
+            "rdnmadrUndgrndCode": {
+                "Description": "도로명주소지하코드"
+            },
+            "rdnmadrMnnm": {
+                "Description": "도로명주소본번"
+            },
+            "rdnmadrSlno": {
+                "Description": "도로명주소부번"
+            },
+            "rdnmadrEtcadres": {
+                "Description": "도로명주소기타주소"
+            },
+            "rdnmadrEmdSn": {
+                "Description": "도로명주소읍면동일련번호"
+            },
+            "telno": {
+                "Description": "전화번호"
+            },
+            "officeSn": {
+                "Description": "사무소일련번호"
+            },
+            "officeSe": {
+                "Description": "사무소구분코드"
+            },
+            "officeSeNm": {
+                "Description": "사무소구분"
+            },
+            "officePosesnSeCode": {
+                "Description": "사무소소유구분코드"
+            },
+            "officePosesnSeCodeNm": {
+                "Description": "사무소소유구분"
+            },
+            "sttusCode": {
+                "Description": "상태코드"
+            },
+            "sttusCodeNm": {
+                "Description": "상태명"
+            },
+            "officeAr": {
+                "Description": "사무실면적(㎡)"
+            },
+            "lastUpdtDt": {
+                "Description": "데이터기준일자"
+            }
+        },
+        "처리 방식": "field"
+    },
+    "getEDBusinessResultsInfo": {
+        "국문": "부동산개발업사업실적정보조회",
+        "URL": "https://api.vworld.kr/ned/data/getEDBusinessResultsInfo",
+        "요청 변수": {
+            "ldCode": {
+                "Required": "옵션",
+                "Description": "시도코드(2자리)"
+            },
+            "estatedvlprCmpnm": {
+                "Required": "옵션",
+                "Description": "부동산개발업상호"
+            },
+            "bsnsYear": {
+                "Required": "옵션",
+                "Description": "사업년도(YYYY: 4자리)"
+            },
+            "rprsntv": {
+                "Required": "옵션",
+                "Description": "대표자"
+            },
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "estatedvlprRegistNo": {
+                "Description": "부동산개발업등록번호"
+            },
+            "estatedvlprCmpnm": {
+                "Description": "부동산개발업상호"
+            },
+            "rprsntv": {
+                "Description": "대표자"
+            },
+            "bsnsYear": {
+                "Description": "사업년도"
+            },
+            "bsnsAcmsltSn": {
+                "Description": "사업실적일련번호"
+            },
+            "histSeCode": {
+                "Description": "이력구분코드"
+            },
+            "histSeCodeNm": {
+                "Description": "이력구분명"
+            },
+            "estatedvlprRegistNoHist": {
+                "Description": "부동산개발업등록번호이력"
+            },
+            "bsnsNm": {
+                "Description": "사업명"
+            },
+            "ladDevlopTy": {
+                "Description": "토지개발유형코드"
+            },
+            "ladDevlopTyNm": {
+                "Description": "토지개발유형"
+            },
+            "fcltyDevlopTy": {
+                "Description": "시설개발유형코드"
+            },
+            "fcltyDevlopTyNm": {
+                "Description": "시설개발유형"
+            },
+            "wct": {
+                "Description": "사업비(백만원)"
+            },
+            "allWct": {
+                "Description": "전체사업비(백만원)"
+            },
+            "salamt": {
+                "Description": "매출금액(백만원)"
+            },
+            "allSalamt": {
+                "Description": "전체매출금액(백만원)"
+            },
+            "bsnsPlotAr": {
+                "Description": "사업대지면적(㎡)"
+            },
+            "allBsnsPlotAr": {
+                "Description": "전체사업대지면적(㎡)"
+            },
+            "bsnsFcltyAr": {
+                "Description": "사업시설면적(㎡)"
+            },
+            "allBsnsFcltyAr": {
+                "Description": "전체사업시설면적(㎡)"
+            },
+            "partcptnTy": {
+                "Description": "참여유형코드"
+            },
+            "partcptnTyNm": {
+                "Description": "참여유형"
+            },
+            "cnstrtrNm": {
+                "Description": "시공자명"
+            },
+            "bnstyRegistno": {
+                "Description": "건설업등록번호"
+            },
+            "bsnsConfirmationPrmisnDe": {
+                "Description": "사업인가허가일자"
+            },
+            "bsnsConfirmationPrmisnAdmns": {
+                "Description": "사업인가허가행정기관"
+            },
+            "strwrkDe": {
+                "Description": "착공일자"
+            },
+            "competDe": {
+                "Description": "준공일자"
+            },
+            "frstSuplyCntrctDe": {
+                "Description": "최초공급계약일자"
+            },
+            "lastSuplyCntrctDe": {
+                "Description": "최종공급계약일자"
+            },
+            "reportDe": {
+                "Description": "보고일자"
+            },
+            "cvplManageNo": {
+                "Description": "민원관리번호"
+            },
+            "cvplPrcsAt": {
+                "Description": "민원처리여부"
+            },
+            "lastUpdtDt": {
+                "Description": "데이터기준일자"
+            }
+        },
+        "처리 방식": "field"
+    },
+    "getEDViolationInfo": {
+        "국문": "부동산개발업위반사항정보조회",
+        "URL": "https://api.vworld.kr/ned/data/getEDViolationInfo",
+        "요청 변수": {
+            "ldCode": {
+                "Required": "옵션",
+                "Description": "시도코드(2자리)"
+            },
+            "estatedvlprCmpnm": {
+                "Required": "옵션",
+                "Description": "부동산개발업상호"
+            },
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "estatedvlprRegistNo": {
+                "Description": "부동산개발업등록번호"
+            },
+            "estatedvlprCmpnm": {
+                "Description": "부동산개발업상호"
+            },
+            "rprsntv": {
+                "Description": "대표자"
+            },
+            "violtMatterSn": {
+                "Description": "위반사항일련번호"
+            },
+            "histSeCode": {
+                "Description": "이력구분코드"
+            },
+            "histSeCodeNm": {
+                "Description": "이력구분명"
+            },
+            "estatedvlprRegistNoHist": {
+                "Description": "부동산개발업등록번호이력"
+            },
+            "violtCn": {
+                "Description": "위반내용"
+            },
+            "violtActionPd": {
+                "Description": "위반행위기간"
+            },
+            "violtActionCo": {
+                "Description": "위반행위수"
+            },
+            "cnsmrDmgeCn": {
+                "Description": "소비자피해내용"
+            },
+            "dspsAdmnstmach": {
+                "Description": "처분행정기관"
+            },
+            "dspsDe": {
+                "Description": "처분일자"
+            },
+            "lastUpdtDt": {
+                "Description": "데이터기준일자"
+            }
+        },
+        "처리 방식": "field"
+    },
+    "getEBOfficeInfo": {
+        "국문": "부동산중개업사무소정보조회",
+        "URL": "https://api.vworld.kr/ned/data/getEBOfficeInfo",
+        "요청 변수": {
+            "ldCode": {
+                "Required": "옵션",
+                "Description": "시군구코드(2~5자리)"
+            },
+            "bsnmCmpnm": {
+                "Required": "옵션",
+                "Description": "사업자상호"
+            },
+            "brkrNm": {
+                "Required": "옵션",
+                "Description": "중개업자명"
+            },
+            "jurirno": {
+                "Required": "옵션",
+                "Description": "법인등록번호"
+            },
+            "sttusSeCode": {
+                "Required": "옵션",
+                "Description": "상태구분코드\n(1:영업중,2:휴업,3:휴업연정,4:실효\n5:폐업,6:전출,7:등록취소,8:업무정지)"
+            },
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "ldCode": {
+                "Description": "시군구코드"
+            },
+            "ldCodeNm": {
+                "Description": "시군구명"
+            },
+            "jurirno": {
+                "Description": "등록번호"
+            },
+            "bsnmCmpnm": {
+                "Description": "사업자상호"
+            },
+            "brkrNm": {
+                "Description": "중개업자명"
+            },
+            "sttusSeCode": {
+                "Description": "상태구분코드"
+            },
+            "sttusSeCodeNm": {
+                "Description": "상태구분명"
+            },
+            "registDe": {
+                "Description": "등록일자"
+            },
+            "estbsBeginDe": {
+                "Description": "보증설정시작일"
+            },
+            "estbsEndDe": {
+                "Description": "보증설정종료일"
+            },
+            "lastUpdtDt": {
+                "Description": "데이터기준일자"
+            },
+            "mnnmadr": {
+                "Description": "지번주소"
+            },
+            "rdnmadr": {
+                "Description": "도로명주소"
+            },
+            "rdnmadrcode": {
+                "Description": "도로명주소코드"
+            }
+        },
+        "처리 방식": "field"
+    },
+    "getEBBrokerInfo": {
+        "국문": "부동산중개업자정보조회",
+        "URL": "https://api.vworld.kr/ned/data/getEBBrokerInfo",
+        "요청 변수": {
+            "ldCode": {
+                "Required": "옵션",
+                "Description": "시군구코드(2~5자리)"
+            },
+            "bsnmCmpnm": {
+                "Required": "옵션",
+                "Description": "사업자상호"
+            },
+            "brkrNm": {
+                "Required": "옵션",
+                "Description": "중개업자명"
+            },
+            "jurirno": {
+                "Required": "옵션",
+                "Description": "법인등록번호"
+            },
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "ldCode": {
+                "Description": "시군구코드"
+            },
+            "ldCodeNm": {
+                "Description": "시군구명"
+            },
+            "jurirno": {
+                "Description": "등록번호"
+            },
+            "bsnmCmpnm": {
+                "Description": "사업자상호"
+            },
+            "brkrNm": {
+                "Description": "중개업자명"
+            },
+            "brkrAsortCode": {
+                "Description": "중개업자종별코드"
+            },
+            "brkrAsortCodeNm": {
+                "Description": "중개업자종별명"
+            },
+            "crqfcNo": {
+                "Description": "자격증번호"
+            },
+            "crqfcAcqdt": {
+                "Description": "자격증취득일"
+            },
+            "ofcpsSeCode": {
+                "Description": "직위구분코드"
+            },
+            "ofcpsSeCodeNm": {
+                "Description": "직위구분명"
+            },
+            "lastUpdtDt": {
+                "Description": "데이터기준일자"
+            }
+        },
+        "처리 방식": "field"
+    },
+    "getPossessionAttr": {
+        "국문": "토지소유정보속성조회",
+        "URL": "https://api.vworld.kr/ned/data/getPossessionAttr",
+        "요청 변수": {
+            "pnu": {
+                "Required": "필수",
+                "Description": "고유번호(8자리 이상)"
+            },
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지 번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "pnu": {
+                "Description": "고유번호"
+            },
+            "ldCode": {
+                "Description": "법정동코드"
+            },
+            "ldCodeNm": {
+                "Description": "법정동명"
+            },
+            "regstrSeCode": {
+                "Description": "대장구분코드"
+            },
+            "regstrSeCodeNm": {
+                "Description": "대장구분명"
+            },
+            "mnnmSlno": {
+                "Description": "지번"
+            },
+            "agbldgSn": {
+                "Description": "집합건물일련번호"
+            },
+            "buldDongNm": {
+                "Description": "건물동명"
+            },
+            "buldFloorNm": {
+                "Description": "건물층명"
+            },
+            "buldHoNm": {
+                "Description": "건물호명"
+            },
+            "buldRoomNm": {
+                "Description": "건물실명"
+            },
+            "cnrsPsnSn": {
+                "Description": "공유인일련번호"
+            },
+            "stdrYm": {
+                "Description": "기준연월"
+            },
+            "lndcgrCode": {
+                "Description": "지목코드"
+            },
+            "lndcgrCodeNm": {
+                "Description": "지목"
+            },
+            "lndpclAr": {
+                "Description": "토지면적(㎡)"
+            },
+            "pblntfPclnd": {
+                "Description": "공시지가(원/㎡)"
+            },
+            "posesnSeCode": {
+                "Description": "소유구분코드"
+            },
+            "posesnSeCodeNm": {
+                "Description": "소유구분"
+            },
+            "resdncSeCode": {
+                "Description": "거주지구분코드"
+            },
+            "resdncSeCodeNm": {
+                "Description": "거주지구분"
+            },
+            "nationInsttSeCode": {
+                "Description": "국가기관구분코드"
+            },
+            "nationInsttSeCodeNm": {
+                "Description": "국가기관구분"
+            },
+            "ownshipChgCauseCode": {
+                "Description": "소유권변동원인코드"
+            },
+            "ownshipChgCauseCodeNm": {
+                "Description": "소유권변동원인"
+            },
+            "ownshipChgDe": {
+                "Description": "소유권변동일자"
+            },
+            "cnrsPsnCo": {
+                "Description": "공유인수"
+            },
+            "lastUpdtDt": {
+                "Description": "데이터기준일자"
+            }
+        },
+        "처리 방식": "field"
+    },
+    "getLandMoveAttr": {
+        "국문": "토지이동이력속성조회",
+        "URL": "https://api.vworld.kr/ned/data/getLandMoveAttr",
+        "요청 변수": {
+            "pnu": {
+                "Required": "필수",
+                "Description": "고유번호(8자리 이상)"
+            },
+            "startDt": {
+                "Required": "옵션",
+                "Description": "토지이동일자 시작일 (YYYYMMDD: 8자리)"
+            },
+            "endDt": {
+                "Required": "옵션",
+                "Description": "토지이동일자 종료일 (YYYYMMDD: 8자리)"
+            },
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지 번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "pnu": {
+                "Description": "고유번호"
+            },
+            "ldCode": {
+                "Description": "법정동코드"
+            },
+            "ldCodeNm": {
+                "Description": "법정동명"
+            },
+            "regstrSeCode": {
+                "Description": "대장구분코드"
+            },
+            "regstrSeCodeNm": {
+                "Description": "대장구분명"
+            },
+            "mnnmSlno": {
+                "Description": "지번"
+            },
+            "ladMvmnHistSn": {
+                "Description": "토지이동이력순번"
+            },
+            "clsSn": {
+                "Description": "폐쇄순번"
+            },
+            "lndcgrCode": {
+                "Description": "지목코드"
+            },
+            "lndcgrCodeNm": {
+                "Description": "지목"
+            },
+            "lndpclAr": {
+                "Description": "토지면적(㎡)"
+            },
+            "ladMvmnPrvonshCode": {
+                "Description": "토지이동사유코드"
+            },
+            "ladMvmnPrvonshCodeNm": {
+                "Description": "토지이동사유"
+            },
+            "ladMvmnDe": {
+                "Description": "토지이동일자"
+            },
+            "ladMvmnErsrDe": {
+                "Description": "토지이동말소일자"
+            },
+            "ladHistSn": {
+                "Description": "토지이력순번"
+            },
+            "lastUpdtDt": {
+                "Description": "데이터기준일자"
+            }
+        },
+        "처리 방식": "field"
+    },
+    "getLandUseAttr": {
+        "국문": "토지이용계획속성조회",
+        "URL": "https://api.vworld.kr/ned/data/getLandUseAttr",
+        "요청 변수": {
+            "pnu": {
+                "Required": "필수",
+                "Description": "고유번호(8자리 이상)"
+            },
+            "cnflcAt": {
+                "Required": "옵션",
+                "Description": "저촉여부코드(1:포함,2:저촉,3:접합)"
+            },
+            "prposAreaDstrcCodeNm": {
+                "Required": "옵션",
+                "Description": "용도지역지구명"
+            },
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지 번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "pnu": {
+                "Description": "고유번호"
+            },
+            "ldCode": {
+                "Description": "법정동코드"
+            },
+            "ldCodeNm": {
+                "Description": "법정동명"
+            },
+            "regstrSeCode": {
+                "Description": "대장구분코드"
+            },
+            "regstrSeCodeNm": {
+                "Description": "대장구분명"
+            },
+            "mnnmSlno": {
+                "Description": "지번"
+            },
+            "manageNo": {
+                "Description": "도면번호"
+            },
+            "cnflcAt": {
+                "Description": "저촉여부코드"
+            },
+            "cnflcAtNm": {
+                "Description": "저촉여부"
+            },
+            "prposAreaDstrcCode": {
+                "Description": "용도지역지구코드"
+            },
+            "prposAreaDstrcCodeNm": {
+                "Description": "용도지역지구명"
+            },
+            "registDt": {
+                "Description": "등록일자"
+            },
+            "lastUpdtDt": {
+                "Description": "데이터기준일자"
+            }
+        },
+        "처리 방식": "field"
+    },
+    "getAreaOfLandCategory": {
+        "국문": "국토지목별현황조회",
+        "URL": "https://api.vworld.kr/ned/data/getAreaOfLandCategory",
+        "요청 변수": {
+            "startDt": {
+                "Required": "옵션",
+                "Description": "기준연월 시작일 (YYYYMM: 6자리)"
+            },
+            "endDt": {
+                "Required": "옵션",
+                "Description": "기준연월 종료일 (YYYYMM: 6자리)"
+            },
+            "reqLvl": {
+                "Required": "옵션",
+                "Description": "요청구분(1: 시도단위, 2: 시군구단위, 3: 읍면동리단위)"
+            },
+            "ldCode": {
+                "Required": "옵션",
+                "Description": "법정동코드(reqLvl값이 1일 경우: 해당 없음, 2일 경우: 2~5자리, 3일 경우: 2~10자리)"
+            },
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지 번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "stdrYm": {
+                "Description": "기준연월"
+            },
+            "ldCode": {
+                "Description": "법정동코드"
+            },
+            "ldCodeNm": {
+                "Description": "법정동명"
+            },
+            "lndcgrCode": {
+                "Description": "지목코드"
+            },
+            "lndcgrCodeNm": {
+                "Description": "지목"
+            },
+            "lnmCo": {
+                "Description": "지번수"
+            },
+            "ladAr": {
+                "Description": "토지면적(㎡)"
+            },
+            "avrgLadAr": {
+                "Description": "평균토지면적(㎡)"
+            },
+            "mxmmLadAr": {
+                "Description": "최대토지면적(㎡)"
+            },
+            "mummLadAr": {
+                "Description": "최소토지면적(㎡)"
+            },
+            "frstRegistDt": {
+                "Description": "데이터기준일자"
+            }
+        },
+        "처리 방식": "field"
+    },
+    "getPriceOfLandCategory": {
+        "국문": "국토지목별토지가격현황조회",
+        "URL": "https://api.vworld.kr/ned/data/getPriceOfLandCategory",
+        "요청 변수": {
+            "startDt": {
+                "Required": "옵션",
+                "Description": "기준연월 시작일 (YYYYMM: 6자리)"
+            },
+            "endDt": {
+                "Required": "옵션",
+                "Description": "기준연월 종료일 (YYYYMM: 6자리)"
+            },
+            "reqLvl": {
+                "Required": "옵션",
+                "Description": "요청구분(1: 시도단위, 2: 시군구단위, 3: 읍면동리단위)"
+            },
+            "ldCode": {
+                "Required": "옵션",
+                "Description": "법정동코드(reqLvl값이 1일 경우: 해당 없음, 2일 경우: 2~5자리, 3일 경우: 2~10자리)"
+            },
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지 번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "stdrYm": {
+                "Description": "기준연월"
+            },
+            "ldCode": {
+                "Description": "법정동코드"
+            },
+            "ldCodeNm": {
+                "Description": "법정동명"
+            },
+            "lndcgrCode": {
+                "Description": "지목코드"
+            },
+            "lndcgrCodeNm": {
+                "Description": "지목"
+            },
+            "ladAmount": {
+                "Description": "토지금액(원/㎡)"
+            },
+            "avrgLadAmount": {
+                "Description": "평균토지금액(원/㎡)"
+            },
+            "avrgPblntfPclnd": {
+                "Description": "평균공시지가(원/㎡)"
+            },
+            "mxmmPblntfPclnd": {
+                "Description": "최대공시지가(원/㎡)"
+            },
+            "mummPblntfPclnd": {
+                "Description": "최소공시지가(원/㎡)"
+            },
+            "frstRegistDt": {
+                "Description": "데이터기준일자"
+            }
+        },
+        "처리 방식": "field"
+    },
+    "getPossessionByAge": {
+        "국문": "국토소유연령별현황조회",
+        "URL": "https://api.vworld.kr/ned/data/getPossessionByAge",
+        "요청 변수": {
+            "startDt": {
+                "Required": "옵션",
+                "Description": "기준연월 시작일 (YYYYMM: 6자리)"
+            },
+            "endDt": {
+                "Required": "옵션",
+                "Description": "기준연월 종료일 (YYYYMM: 6자리)"
+            },
+            "reqLvl": {
+                "Required": "옵션",
+                "Description": "요청구분(1: 시도단위, 2: 시군구단위, 3: 읍면동리단위)"
+            },
+            "ldCode": {
+                "Required": "옵션",
+                "Description": "법정동코드(reqLvl값이 1일 경우: 해당 없음, 2일 경우: 2~5자리, 3일 경우: 2~10자리)"
+            },
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지 번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "stdrYm": {
+                "Description": "기준연월"
+            },
+            "ldCode": {
+                "Description": "법정동코드"
+            },
+            "ldCodeNm": {
+                "Description": "법정동명"
+            },
+            "agrdeSeCode": {
+                "Description": "연령대구분코드"
+            },
+            "agrdeSeCodeNm": {
+                "Description": "연령대구분"
+            },
+            "ownerCo": {
+                "Description": "소유자수"
+            },
+            "avrgLnmCo": {
+                "Description": "평균지번수"
+            },
+            "avrgAr": {
+                "Description": "평균면적(㎡)"
+            },
+            "snglnsPosesnLnmCo": {
+                "Description": "단독소유지번수"
+            },
+            "snglnsPosesnAr": {
+                "Description": "단독소유면적(㎡)"
+            },
+            "copertnPosesnLnmCo": {
+                "Description": "공동소유지번수"
+            },
+            "copertnPosesnAr": {
+                "Description": "공동소유면적(㎡)"
+            },
+            "frstRegistDt": {
+                "Description": "데이터기준일자"
+            }
+        },
+        "처리 방식": "field"
+    },
+    "getChangeOfLandCategory": {
+        "국문": "토지지목변동현황조회",
+        "URL": "https://api.vworld.kr/ned/data/getChangeOfLandCategory",
+        "요청 변수": {
+            "startDt": {
+                "Required": "옵션",
+                "Description": "기준연월 시작일 (YYYYMM: 6자리)"
+            },
+            "endDt": {
+                "Required": "옵션",
+                "Description": "기준연월 종료일 (YYYYMM: 6자리)"
+            },
+            "reqLvl": {
+                "Required": "옵션",
+                "Description": "요청구분(1: 시도단위, 2: 시군구단위, 3: 읍면동리단위)"
+            },
+            "ldCode": {
+                "Required": "옵션",
+                "Description": "법정동코드(reqLvl값이 1일 경우: 해당 없음, 2일 경우: 2~5자리, 3일 경우: 2~10자리)"
+            },
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지 번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "stdrYm": {
+                "Description": "기준연월"
+            },
+            "ldCode": {
+                "Description": "법정동코드"
+            },
+            "ldCodeNm": {
+                "Description": "법정동명"
+            },
+            "bfchgLndcgrCode": {
+                "Description": "변경전지목코드"
+            },
+            "bfchgLndcgrCodeNm": {
+                "Description": "변경전지목"
+            },
+            "aftchLndcgrCode": {
+                "Description": "변경후지목코드"
+            },
+            "aftchLndcgrCodeNm": {
+                "Description": "변경후지목"
+            },
+            "lnmCo": {
+                "Description": "지번수"
+            },
+            "ladAr": {
+                "Description": "토지면적(㎡)"
+            },
+            "frstRegistDt": {
+                "Description": "데이터기준일자"
+            }
+        },
+        "처리 방식": "field"
+    },
+    "getNumberOfOwner": {
+        "국문": "토지소유자수현황조회",
+        "URL": "https://api.vworld.kr/ned/data/getNumberOfOwner",
+        "요청 변수": {
+            "startDt": {
+                "Required": "옵션",
+                "Description": "기준연월 시작일 (YYYYMM: 6자리)"
+            },
+            "endDt": {
+                "Required": "옵션",
+                "Description": "기준연월 종료일 (YYYYMM: 6자리)"
+            },
+            "reqLvl": {
+                "Required": "옵션",
+                "Description": "요청구분(1: 시도단위, 2: 시군구단위, 3: 읍면동리단위)"
+            },
+            "ldCode": {
+                "Required": "옵션",
+                "Description": "법정동코드(reqLvl값이 1일 경우: 해당 없음, 2일 경우: 2~5자리, 3일 경우: 2~10자리)"
+            },
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지 번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "stdrYm": {
+                "Description": "기준연월"
+            },
+            "ldCode": {
+                "Description": "법정동코드"
+            },
+            "ldCodeNm": {
+                "Description": "법정동명"
+            },
+            "lnmCo": {
+                "Description": "지번수"
+            },
+            "ownerCo": {
+                "Description": "소유자수"
+            },
+            "ladAr": {
+                "Description": "토지면적(㎡)"
+            },
+            "frstRegistDt": {
+                "Description": "데이터기준일자"
+            }
+        },
+        "처리 방식": "field"
+    },
+    "getNumberOfHouseholds": {
+        "국문": "토지소유세대수현황조회",
+        "URL": "https://api.vworld.kr/ned/data/getNumberOfHouseholds",
+        "요청 변수": {
+            "startDt": {
+                "Required": "옵션",
+                "Description": "기준연월 시작일 (YYYYMM: 6자리)"
+            },
+            "endDt": {
+                "Required": "옵션",
+                "Description": "기준연월 종료일 (YYYYMM: 6자리)"
+            },
+            "reqLvl": {
+                "Required": "옵션",
+                "Description": "요청구분(1: 시도단위, 2: 시군구단위, 3: 읍면동리단위)"
+            },
+            "ldCode": {
+                "Required": "옵션",
+                "Description": "법정동코드(reqLvl값이 1일 경우: 해당 없음, 2일 경우: 2~5자리, 3일 경우: 2~10자리)"
+            },
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지 번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "stdrYm": {
+                "Description": "기준연월"
+            },
+            "ldCode": {
+                "Description": "법정동코드"
+            },
+            "ldCodeNm": {
+                "Description": "법정동명"
+            },
+            "lnmCo": {
+                "Description": "지번수"
+            },
+            "hshldCo": {
+                "Description": "세대수"
+            },
+            "ladAr": {
+                "Description": "토지면적(㎡)"
+            },
+            "frstRegistDt": {
+                "Description": "데이터기준일자"
+            }
+        },
+        "처리 방식": "field"
+    },
+    "getLandholdingByAge": {
+        "국문": "연령대별토지소유현황조회",
+        "URL": "https://api.vworld.kr/ned/data/getLandholdingByAge",
+        "요청 변수": {
+            "startDt": {
+                "Required": "옵션",
+                "Description": "기준연월 시작일 (YYYYMM: 6자리)"
+            },
+            "endDt": {
+                "Required": "옵션",
+                "Description": "기준연월 종료일 (YYYYMM: 6자리)"
+            },
+            "reqLvl": {
+                "Required": "옵션",
+                "Description": "요청구분(1: 시도단위, 2: 시군구단위, 3: 읍면동리단위)"
+            },
+            "ldCode": {
+                "Required": "옵션",
+                "Description": "법정동코드(reqLvl값이 1일 경우: 해당 없음, 2일 경우: 2~5자리, 3일 경우: 2~10자리)"
+            },
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지 번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "stdrYm": {
+                "Description": "기준연월"
+            },
+            "ldCode": {
+                "Description": "법정동코드"
+            },
+            "ldCodeNm": {
+                "Description": "법정동명"
+            },
+            "regstrSeCode": {
+                "Description": "대장구분코드"
+            },
+            "regstrSeCodeNm": {
+                "Description": "대장구분명"
+            },
+            "lndcgrCode": {
+                "Description": "지목코드"
+            },
+            "lndcgrCodeNm": {
+                "Description": "지목"
+            },
+            "agrdeSeCode": {
+                "Description": "연령대구분코드"
+            },
+            "agrdeSeCodeNm": {
+                "Description": "연령대구분"
+            },
+            "lnmCo": {
+                "Description": "지번수"
+            },
+            "ownerCo": {
+                "Description": "소유자수"
+            },
+            "ladAr": {
+                "Description": "토지면적(㎡)"
+            },
+            "ladAmount": {
+                "Description": "토지금액(원)"
+            },
+            "frstRegistDt": {
+                "Description": "데이터기준일자"
+            }
+        },
+        "처리 방식": "field"
+    },
+    "getLandholdingByResidence": {
+        "국문": "거주지별토지소유현황조회",
+        "URL": "https://api.vworld.kr/ned/data/getLandholdingByResidence",
+        "요청 변수": {
+            "startDt": {
+                "Required": "옵션",
+                "Description": "기준연월 시작일 (YYYYMM: 6자리)"
+            },
+            "endDt": {
+                "Required": "옵션",
+                "Description": "기준연월 종료일 (YYYYMM: 6자리)"
+            },
+            "reqLvl": {
+                "Required": "옵션",
+                "Description": "요청구분(1: 시도단위, 2: 시군구단위, 3: 읍면동리단위)"
+            },
+            "ldCode": {
+                "Required": "옵션",
+                "Description": "법정동코드(reqLvl값이 1일 경우: 해당 없음, 2일 경우: 2~5자리, 3일 경우: 2~10자리)"
+            },
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지 번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "stdrYm": {
+                "Description": "기준연월"
+            },
+            "ldCode": {
+                "Description": "법정동코드"
+            },
+            "ldCodeNm": {
+                "Description": "법정동명"
+            },
+            "lndcgrCode": {
+                "Description": "지목코드"
+            },
+            "lndcgrCodeNm": {
+                "Description": "지목"
+            },
+            "resdncSeCode": {
+                "Description": "거주지구분코드"
+            },
+            "resdncSeCodeNm": {
+                "Description": "거주지구분"
+            },
+            "lnmCo": {
+                "Description": "지번수"
+            },
+            "ownerCo": {
+                "Description": "소유자수"
+            },
+            "ladAr": {
+                "Description": "토지면적(㎡)"
+            },
+            "ladAmount": {
+                "Description": "토지금액(원)"
+            },
+            "frstRegistDt": {
+                "Description": "데이터기준일자"
+            }
+        },
+        "처리 방식": "field"
+    },
+    "getIndvdLandPrice": {
+        "국문": "개별공시지가기본현황조회",
+        "URL": "https://api.vworld.kr/ned/data/getIndvdLandPrice",
+        "요청 변수": {
+            "stdrYear": {
+                "Required": "옵션",
+                "Description": "기준연도(YYYY: 4자리)"
+            },
+            "reqLvl": {
+                "Required": "옵션",
+                "Description": "요청구분(1: 시도단위, 2: 시군구단위, 3: 읍면동리단위)"
+            },
+            "ldCode": {
+                "Required": "옵션",
+                "Description": "법정동코드(reqLvl값이 1일 경우: 해당 없음, 2일 경우: 2~5자리, 3일 경우: 2~10자리)"
+            },
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지 번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "stdrYear": {
+                "Description": "기준연도"
+            },
+            "ldCode": {
+                "Description": "법정동코드"
+            },
+            "ldCodeNm": {
+                "Description": "법정동명"
+            },
+            "regstrSeCode": {
+                "Description": "대장구분코드"
+            },
+            "regstrSeCodeNm": {
+                "Description": "대장구분명"
+            },
+            "lndcgrCode": {
+                "Description": "지목코드"
+            },
+            "lndcgrCodeNm": {
+                "Description": "지목"
+            },
+            "prposArea": {
+                "Description": "용도지역코드"
+            },
+            "prposAreaNm": {
+                "Description": "용도지역명"
+            },
+            "prposDstrc": {
+                "Description": "용도지구코드"
+            },
+            "prposDstrcNm": {
+                "Description": "용도지구명"
+            },
+            "ladAr": {
+                "Description": "토지면적(㎡)"
+            },
+            "ladPblntfPclnd": {
+                "Description": "공시지가(원/㎡)"
+            },
+            "frstRegistDt": {
+                "Description": "데이터기준일자"
+            }
+        },
+        "처리 방식": "field"
+    },
+    "getReferLandPriceAttr": {
+        "국문": "표준지공시지가속성조회",
+        "URL": "https://api.vworld.kr/ned/data/getReferLandPriceAttr",
+        "요청 변수": {
+            "ldCode": {
+                "Required": "옵션",
+                "Description": "법정동코드(2~10자리)"
+            },
+            "stdrYear": {
+                "Required": "옵션",
+                "Description": "기준연도(YYYY: 4자리)"
+            },
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지 번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "pnu": {
+                "Description": "고유번호"
+            },
+            "ldCode": {
+                "Description": "법정동코드"
+            },
+            "ldCodeNm": {
+                "Description": "법정동명"
+            },
+            "regstrSeCode": {
+                "Description": "특수지구분코드"
+            },
+            "regstrSeCodeNm": {
+                "Description": "특수지구분명"
+            },
+            "mnnmSlno": {
+                "Description": "지번"
+            },
+            "stdLandSn": {
+                "Description": "표준지일련번호"
+            },
+            "stdrYear": {
+                "Description": "기준연도"
+            },
+            "bsnsDstrcAr": {
+                "Description": "사업지구면적(㎡)"
+            },
+            "lndcgrCode": {
+                "Description": "지목코드"
+            },
+            "lndcgrCodeNm": {
+                "Description": "지목"
+            },
+            "lndpclAr": {
+                "Description": "토지면적(㎡)"
+            },
+            "prposArea1": {
+                "Description": "용도지역코드1"
+            },
+            "prposAreaNm1": {
+                "Description": "용도지역명1"
+            },
+            "prposArea2": {
+                "Description": "용도지역코드2"
+            },
+            "prposAreaNm2": {
+                "Description": "용도지역명2"
+            },
+            "prposDstrc1": {
+                "Description": "용도지구코드1"
+            },
+            "prposDstrcNm1": {
+                "Description": "용도지구명1"
+            },
+            "prposDstrc2": {
+                "Description": "용도지구코드2"
+            },
+            "prposDstrcNm2": {
+                "Description": "용도지구명2"
+            },
+            "cnflcRt": {
+                "Description": "저촉율(%)"
+            },
+            "ladUseSittn": {
+                "Description": "토지이용상황코드"
+            },
+            "ladUseSittnNm": {
+                "Description": "토지이용상황"
+            },
+            "tpgrphHgCode": {
+                "Description": "지형높이코드"
+            },
+            "tpgrphHgCodeNm": {
+                "Description": "지형높이(m)"
+            },
+            "tpgrphFrmCode": {
+                "Description": "지형형상코드"
+            },
+            "tpgrphFrmCodeNm": {
+                "Description": "지형형상"
+            },
+            "roadSideCode": {
+                "Description": "도로측면코드"
+            },
+            "roadSideCodeNm": {
+                "Description": "도로측면"
+            },
+            "roadDstncCode": {
+                "Description": "도로거리코드"
+            },
+            "roadDstncCodeNm": {
+                "Description": "도로거리"
+            },
+            "pblntfPclnd": {
+                "Description": "공시지가(원/㎡)"
+            },
+            "stdlandPosesnSeCode": {
+                "Description": "표준지소유구분코드"
+            },
+            "stdlandPosesnSeCodeNm": {
+                "Description": "표준지소유구분명"
+            },
+            "posesnStle": {
+                "Description": "소유형태코드"
+            },
+            "posesnStleNm": {
+                "Description": "소유형태명"
+            },
+            "lastUpdtDt": {
+                "Description": "데이터기준일자"
+            }
+        },
+        "처리 방식": "field"
+    },
+    "cnrdlnList": {
+        "국문": "공유지연명목록조회",
+        "URL": "https://api.vworld.kr/ned/data/cnrdlnList",
+        "요청 변수": {
+            "pnu": {
+                "Required": "필수",
+                "Description": "고유번호"
+            },
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지 번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "pnu": {
+                "Description": "고유번호"
+            },
+            "cnrsPsnSn": {
+                "Description": "공유인일련번호"
+            },
+            "liCode": {
+                "Description": "법정동코드"
+            },
+            "liCodeNm": {
+                "Description": "법정동명"
+            },
+            "mnnmSlno": {
+                "Description": "지번"
+            },
+            "regstrSeCode": {
+                "Description": "대장구분코드"
+            },
+            "regstrSeCodeNm": {
+                "Description": "대장구분명"
+            },
+            "posesnSeCode": {
+                "Description": "소유구분코드"
+            },
+            "posesnSeCodeNm": {
+                "Description": "소유구분명"
+            },
+            "lastUpdtDt": {
+                "Description": "데이터기준일자"
+            },
+            "numOfRows": {
+                "Description": "검색건수"
+            },
+            "pageNo": {
+                "Description": "페이지 번호"
+            },
+            "totalCount": {
+                "Description": "전체건수"
+            }
+        },
+        "처리 방식": "double"
+    },
+    "ldaregList": {
+        "국문": "대지권등록목록조회",
+        "URL": "https://api.vworld.kr/ned/data/ldaregList",
+        "요청 변수": {
+            "pnu": {
+                "Required": "필수",
+                "Description": "고유번호"
+            },
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지 번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "pnu": {
+                "Description": "고유번호"
+            },
+            "agbldgSn": {
+                "Description": "대지권 일련번호"
+            },
+            "liCode": {
+                "Description": "법정동코드"
+            },
+            "liCodeNm": {
+                "Description": "법정동명"
+            },
+            "mnnmSlno": {
+                "Description": "지번"
+            },
+            "regstrSeCode": {
+                "Description": "대장구분코드"
+            },
+            "regstrSeCodeNm": {
+                "Description": "대장구분명"
+            },
+            "buldNm": {
+                "Description": "건축물명"
+            },
+            "buldDongNm": {
+                "Description": "동명"
+            },
+            "buldFloorNm": {
+                "Description": "층명"
+            },
+            "buldHoNm": {
+                "Description": "호명"
+            },
+            "buldRoomNm": {
+                "Description": "실명"
+            },
+            "ldaQotaRate": {
+                "Description": "대지권비율"
+            },
+            "clsSeCode": {
+                "Description": "폐쇄구분코드"
+            },
+            "clsSeCodeNm": {
+                "Description": "폐쇄구분명"
+            },
+            "relateLdEmdLiCode": {
+                "Description": "관련토지소재지코드"
+            },
+            "lastUpdtDt": {
+                "Description": "데이터기준일자"
+            },
+            "numOfRows": {
+                "Description": "검색건수"
+            },
+            "pageNo": {
+                "Description": "페이지 번호"
+            },
+            "totalCount": {
+                "Description": "전체건수"
+            }
+        },
+        "처리 방식": "double"
+    },
+    "buldSnList": {
+        "국문": "건물일련번호조회",
+        "URL": "https://api.vworld.kr/ned/data/buldSnList",
+        "요청 변수": {
+            "pnu": {
+                "Required": "필수",
+                "Description": "고유번호"
+            },
+            "agbldgSn": {
+                "Required": "옵션",
+                "Description": "대지권 일련번호"
+            },
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지 번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "pnu": {
+                "Description": "고유번호"
+            },
+            "agbldgSn": {
+                "Description": "대지권 일련번호"
+            },
+            "liCode": {
+                "Description": "법정동코드"
+            },
+            "liCodeNm": {
+                "Description": "법정동명"
+            },
+            "mnnmSlno": {
+                "Description": "지번"
+            },
+            "regstrSeCode": {
+                "Description": "대장구분코드"
+            },
+            "regstrSeCodeNm": {
+                "Description": "대장구분명"
+            },
+            "buldNm": {
+                "Description": "건축물명"
+            },
+            "buldDongNm": {
+                "Description": "동명"
+            },
+            "buldFloorNm": {
+                "Description": "층명"
+            },
+            "buldHoNm": {
+                "Description": "호명"
+            },
+            "buldRoomNm": {
+                "Description": "실명"
+            },
+            "ldaQotaRate": {
+                "Description": "대지권비율"
+            },
+            "clsSeCode": {
+                "Description": "폐쇄구분코드"
+            },
+            "clsSeCodeNm": {
+                "Description": "폐쇄구분명"
+            },
+            "relateLdEmdLiCode": {
+                "Description": "관련토지소재지코드"
+            },
+            "lastUpdtDt": {
+                "Description": "데이터기준일자"
+            },
+            "numOfRows": {
+                "Description": "검색건수"
+            },
+            "pageNo": {
+                "Description": "페이지 번호"
+            },
+            "totalCount": {
+                "Description": "전체건수"
+            }
+        },
+        "처리 방식": "double"
+    },
+    "buldCongNmList": {
+        "국문": "건물동명조회",
+        "URL": "https://api.vworld.kr/ned/data/buldCongNmList",
+        "요청 변수": {
+            "pnu": {
+                "Required": "필수",
+                "Description": "고유번호"
+            },
+            "agbldgSn": {
+                "Required": "옵션",
+                "Description": "대지권 일련번호"
+            },
+            "buldDongNm": {
+                "Required": "옵션",
+                "Description": "동명"
+            },
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지 번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "pnu": {
+                "Description": "고유번호"
+            },
+            "agbldgSn": {
+                "Description": "대지권 일련번호"
+            },
+            "liCode": {
+                "Description": "법정동코드"
+            },
+            "liCodeNm": {
+                "Description": "법정동명"
+            },
+            "mnnmSlno": {
+                "Description": "지번"
+            },
+            "regstrSeCode": {
+                "Description": "대장구분코드"
+            },
+            "regstrSeCodeNm": {
+                "Description": "대장구분명"
+            },
+            "buldNm": {
+                "Description": "건축물명"
+            },
+            "buldDongNm": {
+                "Description": "동명"
+            },
+            "buldFloorNm": {
+                "Description": "층명"
+            },
+            "buldHoNm": {
+                "Description": "호명"
+            },
+            "buldRoomNm": {
+                "Description": "실명"
+            },
+            "ldaQotaRate": {
+                "Description": "대지권비율"
+            },
+            "clsSeCode": {
+                "Description": "폐쇄구분코드"
+            },
+            "clsSeCodeNm": {
+                "Description": "폐쇄구분명"
+            },
+            "relateLdEmdLiCode": {
+                "Description": "관련토지소재지코드"
+            },
+            "lastUpdtDt": {
+                "Description": "데이터기준일자"
+            },
+            "numOfRows": {
+                "Description": "검색건수"
+            },
+            "pageNo": {
+                "Description": "페이지 번호"
+            },
+            "totalCount": {
+                "Description": "전체건수"
+            }
+        },
+        "처리 방식": "double"
+    },
+    "buldFloorCoList": {
+        "국문": "건물층수조회",
+        "URL": "https://api.vworld.kr/ned/data/buldFloorCoList",
+        "요청 변수": {
+            "pnu": {
+                "Required": "필수",
+                "Description": "고유번호"
+            },
+            "agbldgSn": {
+                "Required": "옵션",
+                "Description": "대지권 일련번호"
+            },
+            "buldDongNm": {
+                "Required": "옵션",
+                "Description": "동명"
+            },
+            "buldFloorNm": {
+                "Required": "옵션",
+                "Description": "층명"
+            },
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지 번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "pnu": {
+                "Description": "고유번호"
+            },
+            "agbldgSn": {
+                "Description": "대지권 일련번호"
+            },
+            "liCode": {
+                "Description": "법정동코드"
+            },
+            "liCodeNm": {
+                "Description": "법정동명"
+            },
+            "mnnmSlno": {
+                "Description": "지번"
+            },
+            "regstrSeCode": {
+                "Description": "대장구분코드"
+            },
+            "regstrSeCodeNm": {
+                "Description": "대장구분명"
+            },
+            "buldNm": {
+                "Description": "건축물명"
+            },
+            "buldDongNm": {
+                "Description": "동명"
+            },
+            "buldFloorNm": {
+                "Description": "층명"
+            },
+            "buldHoNm": {
+                "Description": "호명"
+            },
+            "buldRoomNm": {
+                "Description": "실명"
+            },
+            "ldaQotaRate": {
+                "Description": "대지권비율"
+            },
+            "clsSeCode": {
+                "Description": "폐쇄구분코드"
+            },
+            "clsSeCodeNm": {
+                "Description": "폐쇄구분명"
+            },
+            "relateLdEmdLiCode": {
+                "Description": "관련토지소재지코드"
+            },
+            "lastUpdtDt": {
+                "Description": "데이터기준일자"
+            },
+            "numOfRows": {
+                "Description": "검색건수"
+            },
+            "pageNo": {
+                "Description": "페이지 번호"
+            },
+            "totalCount": {
+                "Description": "전체건수"
+            }
+        },
+        "처리 방식": "double"
+    },
+    "buldHoCoList": {
+        "국문": "건물호수조회",
+        "URL": "https://api.vworld.kr/ned/data/buldHoCoList",
+        "요청 변수": {
+            "pnu": {
+                "Required": "필수",
+                "Description": "고유번호"
+            },
+            "agbldgSn": {
+                "Required": "옵션",
+                "Description": "대지권 일련번호"
+            },
+            "buldDongNm": {
+                "Required": "옵션",
+                "Description": "동명"
+            },
+            "buldFloorNm": {
+                "Required": "옵션",
+                "Description": "층명"
+            },
+            "buldHoNm": {
+                "Required": "옵션",
+                "Description": "호명"
+            },
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지 번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "pnu": {
+                "Description": "고유번호"
+            },
+            "agbldgSn": {
+                "Description": "대지권 일련번호"
+            },
+            "liCode": {
+                "Description": "법정동코드"
+            },
+            "liCodeNm": {
+                "Description": "법정동명"
+            },
+            "mnnmSlno": {
+                "Description": "지번"
+            },
+            "regstrSeCode": {
+                "Description": "대장구분코드"
+            },
+            "regstrSeCodeNm": {
+                "Description": "대장구분명"
+            },
+            "buldNm": {
+                "Description": "건축물명"
+            },
+            "buldDongNm": {
+                "Description": "동명"
+            },
+            "buldFloorNm": {
+                "Description": "층명"
+            },
+            "buldHoNm": {
+                "Description": "호명"
+            },
+            "buldRoomNm": {
+                "Description": "실명"
+            },
+            "ldaQotaRate": {
+                "Description": "대지권비율"
+            },
+            "clsSeCode": {
+                "Description": "폐쇄구분코드"
+            },
+            "clsSeCodeNm": {
+                "Description": "폐쇄구분명"
+            },
+            "relateLdEmdLiCode": {
+                "Description": "관련토지소재지코드"
+            },
+            "lastUpdtDt": {
+                "Description": "데이터기준일자"
+            },
+            "numOfRows": {
+                "Description": "검색건수"
+            },
+            "pageNo": {
+                "Description": "페이지 번호"
+            },
+            "totalCount": {
+                "Description": "전체건수"
+            }
+        },
+        "처리 방식": "double"
+    },
+    "buldRlnmList": {
+        "국문": "건물실명조회",
+        "URL": "https://api.vworld.kr/ned/data/buldRlnmList",
+        "요청 변수": {
+            "pnu": {
+                "Required": "필수",
+                "Description": "고유번호"
+            },
+            "agbldgSn": {
+                "Required": "옵션",
+                "Description": "대지권 일련번호"
+            },
+            "buldDongNm": {
+                "Required": "옵션",
+                "Description": "동명"
+            },
+            "buldFloorNm": {
+                "Required": "옵션",
+                "Description": "층명"
+            },
+            "buldHoNm": {
+                "Required": "옵션",
+                "Description": "호명"
+            },
+            "buldRoomNm": {
+                "Required": "옵션",
+                "Description": "실명"
+            },
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지 번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "pnu": {
+                "Description": "고유번호"
+            },
+            "agbldgSn": {
+                "Description": "대지권 일련번호"
+            },
+            "liCode": {
+                "Description": "법정동코드"
+            },
+            "liCodeNm": {
+                "Description": "법정동명"
+            },
+            "mnnmSlno": {
+                "Description": "지번"
+            },
+            "regstrSeCode": {
+                "Description": "대장구분코드"
+            },
+            "regstrSeCodeNm": {
+                "Description": "대장구분명"
+            },
+            "buldNm": {
+                "Description": "건축물명"
+            },
+            "buldDongNm": {
+                "Description": "동명"
+            },
+            "buldFloorNm": {
+                "Description": "층명"
+            },
+            "buldHoNm": {
+                "Description": "호명"
+            },
+            "buldRoomNm": {
+                "Description": "실명"
+            },
+            "ldaQotaRate": {
+                "Description": "대지권비율"
+            },
+            "clsSeCode": {
+                "Description": "폐쇄구분코드"
+            },
+            "clsSeCodeNm": {
+                "Description": "폐쇄구분명"
+            },
+            "relateLdEmdLiCode": {
+                "Description": "관련토지소재지코드"
+            },
+            "lastUpdtDt": {
+                "Description": "데이터기준일자"
+            },
+            "numOfRows": {
+                "Description": "검색건수"
+            },
+            "pageNo": {
+                "Description": "페이지 번호"
+            },
+            "totalCount": {
+                "Description": "전체건수"
+            }
+        },
+        "처리 방식": "double"
+    },
+    "amdList": {
+        "국문": "동명조회",
+        "URL": "https://api.vworld.kr/ned/data/amdList",
+        "요청 변수": {
+            "admCodeNm": {
+                "Required": "필수",
+                "Description": "동명"
+            },
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지 번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "admCodeNm": {
+                "Description": "동명"
+            },
+            "lnm": {
+                "Description": "번지"
+            },
+            "mnnm": {
+                "Description": "분번"
+            },
+            "slno": {
+                "Description": "부번"
+            },
+            "ldCpsgCode": {
+                "Description": "법정동_시도시군구_코드"
+            },
+            "ldEmdLiCode": {
+                "Description": "법정동_읍면동_리_코드"
+            },
+            "regstrSeCode": {
+                "Description": "대장_구분_코드"
+            },
+            "pnu": {
+                "Description": "고유번호"
+            },
+            "admCode": {
+                "Description": "행정구역_코드"
+            },
+            "lowestAdmCodeNm": {
+                "Description": "최하위_행정구역_코드_명"
+            },
+            "numOfRows": {
+                "Description": "검색건수"
+            },
+            "pageNo": {
+                "Description": "페이지 번호"
+            },
+            "totalCount": {
+                "Description": "전체건수"
+            }
+        },
+        "처리 방식": "double"
+    },
+    "admCodeList": {
+        "국문": "시/도조회",
+        "URL": "https://api.vworld.kr/ned/data/admCodeList",
+        "요청 변수": {
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지 번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "admCodeNm": {
+                "Description": "행정구역 명"
+            },
+            "admCode": {
+                "Description": "행정구역 코드"
+            },
+            "lowestAdmCodeNm": {
+                "Description": "최하위 행정구역 명"
+            }
+        },
+        "처리 방식": "field"
+    },
+    "admSiList": {
+        "국문": "시군구조회",
+        "URL": "https://api.vworld.kr/ned/data/admSiList",
+        "요청 변수": {
+            "admCode": {
+                "Required": "필수",
+                "Description": "시도 코드(2자리)"
+            },
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지 번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "admCodeNm": {
+                "Description": "행정구역 명"
+            },
+            "admCode": {
+                "Description": "행정구역 코드"
+            },
+            "lowestAdmCodeNm": {
+                "Description": "최하위 행정구역 명"
+            }
+        },
+        "처리 방식": "double"
+    },
+    "admDongList": {
+        "국문": "읍면동조회",
+        "URL": "https://api.vworld.kr/ned/data/admDongList",
+        "요청 변수": {
+            "admCode": {
+                "Required": "필수",
+                "Description": "시도/시군구 코드(5자리)"
+            },
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지 번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "admCodeNm": {
+                "Description": "행정구역 명"
+            },
+            "admCode": {
+                "Description": "행정구역 코드"
+            },
+            "lowestAdmCodeNm": {
+                "Description": "최하위 행정구역 명"
+            }
+        },
+        "처리 방식": "double"
+    },
+    "admReeList": {
+        "국문": "리조회",
+        "URL": "https://api.vworld.kr/ned/data/admReeList",
+        "요청 변수": {
+            "admCode": {
+                "Required": "필수",
+                "Description": "시도/시군구/읍면동 코드(8자리)"
+            },
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지 번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "admCodeNm": {
+                "Description": "행정구역 명"
+            },
+            "admCode": {
+                "Description": "행정구역 코드"
+            },
+            "lowestAdmCodeNm": {
+                "Description": "최하위 행정구역 명"
+            }
+        },
+        "처리 방식": "double"
+    },
+    "ladgrdList": {
+        "국문": "토지등급목록조회",
+        "URL": "https://api.vworld.kr/ned/data/ladgrdList",
+        "요청 변수": {
+            "pnu": {
+                "Required": "필수",
+                "Description": "고유번호"
+            },
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지 번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "pnu": {
+                "Description": "고유번호"
+            },
+            "liCode": {
+                "Description": "법정동코드"
+            },
+            "liCodeNm": {
+                "Description": "법정동명"
+            },
+            "mnnmSlno": {
+                "Description": "지번"
+            },
+            "regstrSeCode": {
+                "Description": "대장구분코드"
+            },
+            "regstrSeCodeNm": {
+                "Description": "대장구분명"
+            },
+            "ladGradChangeDe": {
+                "Description": "토지등급변경일자"
+            },
+            "ladGradSeCode": {
+                "Description": "토지등급구분코드"
+            },
+            "ladGradSeCodeNm": {
+                "Description": "토지등급구분명"
+            },
+            "ladGrad": {
+                "Description": "토지등급"
+            },
+            "lastUpdtDt": {
+                "Description": "데이터기준일자"
+            },
+            "numOfRows": {
+                "Description": "검색건수"
+            },
+            "pageNo": {
+                "Description": "페이지 번호"
+            },
+            "totalCount": {
+                "Description": "전체건수"
+            }
+        },
+        "처리 방식": "double"
+    },
+    "ladfrlList": {
+        "국문": "토지임야목록조회",
+        "URL": "https://api.vworld.kr/ned/data/ladfrlList",
+        "요청 변수": {
+            "pnu": {
+                "Required": "필수",
+                "Description": "고유번호"
+            },
+            "format": {
+                "Required": "옵션",
+                "Description": "응답결과 형식(xml 또는 json)"
+            },
+            "numOfRows": {
+                "Required": "옵션",
+                "Description": "검색건수 (최대 1000)"
+            },
+            "pageNo": {
+                "Required": "옵션",
+                "Description": "페이지 번호"
+            },
+            "key": {
+                "Required": "필수",
+                "Description": "발급받은 api key"
+            },
+            "domain": {
+                "Required": "옵션",
+                "Description": ""
+            }
+        },
+        "출력 결과": {
+            "pnu": {
+                "Description": "고유번호"
+            },
+            "ldCode": {
+                "Description": "법정동코드"
+            },
+            "ldCodeNm": {
+                "Description": "법정동명"
+            },
+            "mnnmSlno": {
+                "Description": "지번"
+            },
+            "regstrSeCode": {
+                "Description": "대장구분코드"
+            },
+            "regstrSeCodeNm": {
+                "Description": "대장구분명"
+            },
+            "lndcgrCode": {
+                "Description": "지목코드"
+            },
+            "lndcgrCodeNm": {
+                "Description": "지목명"
+            },
+            "lndpclAr": {
+                "Description": "면적(㎡)"
+            },
+            "posesnSeCode": {
+                "Description": "소유구분코드"
+            },
+            "posesnSeCodeNm": {
+                "Description": "소유구분명"
+            },
+            "cnrsPsnCo": {
+                "Description": "소유(공유)인수(명)"
+            },
+            "ladFrtlSc": {
+                "Description": "축척구분코드"
+            },
+            "ladFrtlScNm": {
+                "Description": "축척구분명"
+            },
+            "lastUpdtDt": {
+                "Description": "데이터기준일자"
+            },
+            "numOfRows": {
+                "Description": "검색건수"
+            },
+            "pageNo": {
+                "Description": "페이지 번호"
+            },
+            "totalCount": {
+                "Description": "전체건수"
+            }
+        },
+        "처리 방식": "double"
+    }
+}
